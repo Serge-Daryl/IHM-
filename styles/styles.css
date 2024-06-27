@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background: #000;
+    position: relative;
+}
+
+.slider-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.slider-content p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10%;
+}
+
+.section {
+    padding: 100px;
+}
+
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.dark {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/slider.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    color: #fff;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w60 p {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w32 {
+    width: 32%;
+}
+
+.space-between {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.icon {
+    display: block;
+    font-size: 60px !important;
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.value {
+    display: block;
+    font-size: 0.5rem;
+}
+
+.contact {
+    border: 2px dashed;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    padding-block: 10px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.7);
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+    box-sizing: border-box;
+    transition: .2s ease;
+}
+
+.header-menu li a:hover {
+    background-color: #f2f2f2;
+}
+
+.header-menu li:last-child a {
+    background-color: #1c2bda;
+    color: #fff;
+}
+
+@media(max-width: 810px) {
+    header {
+        display: none;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+
+    .slider-content {
+        width: 100%;
+    }
+
+    .slider-content p {
+        margin-top: 20%;
+        font-size: .5rem;
+        text-wrap: balance;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    .toColumn {
+        flex-direction: column;
+    }
+
+    .mCenter {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wm47 {
+        width: 47%;
+    }
+
+    .wm100 {
+        width: 100% !important;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .boxed {
+        max-width: 90%;
+    }
+}
+
+.excel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+}
+
+.excel-table th {
+    background-color: #403e3e; /* Fond gris clair pour les en-têtes */
+    color: #000; 
+    font-weight: bold;
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: center;
+}
+
+.excel-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: #333; 
+}
+
+.excel-table .first-row td {
+    background-color: #545252; /* Fond gris clair pour la première ligne */
+    font-weight: bold;
+    color: #000; 
+    border: 1px solid #ddd; 
+}
