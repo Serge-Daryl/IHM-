@@ -32,6 +32,16 @@ body {
     text-align: center;
 }
 
+.slider-content h1 {
+    color: #f8b800 !important;
+    font-size: 3rem;
+}
+
+.slider-content p {
+    color: #e7563c !important;
+}
+
+
 h1 {
     color: #fff;
     font-size: 3rem;
@@ -186,96 +196,291 @@ header {
 }
 
 .header-menu li:last-child a {
-    background-color: #1c2bda;
+    background-color: #f8b800;
     color: #fff;
 }
 
-@media(max-width: 810px) {
-    header {
-        display: none;
-    }
 
-    .slider {
-        height: 60vh;
-    }
+/* Supprimer le soulignement des liens et changer la couleur du texte */
+.table tbody a {
+    text-decoration: none; /* Enlever le soulignement */
+    color: #000; /* Couleur du texte */
+}
 
-    .slider-content {
-        width: 100%;
-    }
+/* CSS personnalisé pour les en-têtes de tableau */
+.table-custom thead th {
+    background-color: #343a40; /* Fond gris foncé */
+    color: #ffffff; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Alignement du texte au centre */
+}
 
-    .slider-content p {
-        margin-top: 20%;
-        font-size: .5rem;
-        text-wrap: balance;
-    }
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
 
-    h1 {
-        font-size: 1rem;
-    }
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alignement en haut */
+    min-height: 100vh; /* Pour occuper toute la hauteur de la page */
+    padding-top: 50px; /* Ajuster pour ajouter un espace en haut */
+}
 
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
+/* Assurez-vous que .signup-box a une largeur définie pour que le centrage fonctionne */
+.signup-box {
+    width: 400px; /* Ajustez la largeur en fonction de vos besoins */
+    background: #fff; /* Couleur de fond avec opacité */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
 
-    p {
-        font-size: 1rem;
-        text-wrap: balance;
-    }
+.forgot-box {
+    width: 400px; /* Ajustez la largeur en fonction de vos besoins */
+    background: #fff; /* Couleur de fond avec opacité */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
 
-    .toColumn {
-        flex-direction: column;
-    }
+.login-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alignement à gauche */
+    width: 100%; /* Ajustement de la largeur */
+    padding: 20px; /* Ajout de padding pour l'espace intérieur */
+    text-align: left; /* Alignement du texte à gauche */
+}
 
-    .mCenter {
-        justify-content: center;
-        align-items: center;
-    }
 
-    .wm47 {
-        width: 47%;
-    }
+.login-text h1 {
+    color: #f8b800;
+    font-size: 3rem;
+}
 
-    .wm100 {
-        width: 100% !important;
-    }
+.login-text p {
+    color: #e7563c;
+}
 
-    .section {
-        padding: 50px 0;
-    }
 
-    .boxed {
-        max-width: 90%;
-    }
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size */
+    margin: 5px 0;
+}
+
+.birthdate-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.birthdate-group select {
+    width: calc(33.33% - 10px);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px; /* Increase padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.primary-btn {
+    background-color: #f8b800 !important;
+    color: #fff !important;
+    font-size: 18px; /* Larger font size */
+}
+
+.primary-btn:hover {
+    background-color: #e6a600 !important;
+}
+
+.form-links {
+    margin-top: 15px;
+}
+
+.form-links a {
+    color: #0062E6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.second-btn {
+    background-color: #e7563c !important; /* Keep the same background color */
+    padding: 8px; /* Smaller padding */
+    color: #fff !important;
+    font-size: 14px; /* Smaller font size */
+}
+
+.second-btn:hover {
+    background-color: #d24528 !important; /* Keep the same hover color */
+}
+
+.third-btn {
+    background-color: #f8b800;
+    color: #fff;
+}
+
+.third-btn:hover {
+    background-color: #e7563c;
+}
+
+.fourth-btn {
+    background-color: #f8b800 !important;
+    color: #fff !important;
+    font-size: 18px; /* Larger font size */
+}
+
+.fourth-btn:hover {
+    background-color: #e6a600 !important;
+}
+
+.fifth-btn {
+    background-color: #e7563c !important; /* Keep the same background color */
+    padding: 8px; /* Smaller padding */
+    color: #fff !important;
+    font-size: 14px; /* Smaller font size */
+}
+
+.fifth-btn:hover {
+    background-color: #d24528 !important; /* Keep the same hover color */
+}
+
+/* Styles pour la section "tableau d'affichage" */
+#table {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#table .boxed {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#table h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
 }
 
 .excel-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #fff; 
-    border: 1px solid #ddd; 
+}
+
+.excel-table th,
+.excel-table td {
+    padding: 10px 15px;
+    border: 1px solid #fff;
 }
 
 .excel-table th {
-    background-color: #403e3e; /* Fond gris clair pour les en-têtes */
-    color: #000; 
-    font-weight: bold;
-    border: 1px solid #ddd; 
-    padding: 8px;
-    text-align: center;
+    background-color: #555;
 }
 
 .excel-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-    color: #333; 
+    background-color: #666;
 }
 
 .excel-table .first-row td {
-    background-color: #545252; /* Fond gris clair pour la première ligne */
     font-weight: bold;
-    color: #000; 
-    border: 1px solid #ddd; 
+}
+
+/* Styles pour la section "fichiers téléchargés" */
+#fichiers {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#fichiers .boxed {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#fichiers h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#file-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#file-table th,
+#file-table td {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+}
+
+#file-table th {
+    background-color: #444;
+}
+
+#file-table td {
+    background-color: #555;
+}
+
+#file-table .first-row td {
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
